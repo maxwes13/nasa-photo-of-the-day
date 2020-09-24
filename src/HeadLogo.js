@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "C:\Users\maxwe\nasa-photo-of-the-day\src\NasaLogo.png"
+import Image from "./NasaLogo.png"
+
+const HeadImg = styled.img`
+    width: 15%;
+`;
+
 
 function HeadLogo () {
 
     return (
-        <img src={Image}></img>
+        <HeadImg src={Image}></HeadImg>
     )
 }
 

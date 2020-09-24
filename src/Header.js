@@ -2,14 +2,25 @@ import React from "react";
 import styled from "styled-components";
 import HeadLogo from "./HeadLogo";
 
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
+    margin-bottom: 50px;
+`;
+
+const HeadText = styled.h1`
+    text-align: right
+`;
+
 
 function Header () {
 
     return (
-        <div>
+        <Wrapper>
             <HeadLogo />
-            <h1>The NASA Image Project</h1>
-        </div>
+            <HeadText>The NASA Image Project</HeadText>
+        </Wrapper>
     )
 
 }
